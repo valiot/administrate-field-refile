@@ -18,4 +18,6 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'administrate', '~> 0.1.2'
   gem.add_dependency 'rails', '~> 4.2'
+
+  gem.add_development_dependency 'rspec'
 end

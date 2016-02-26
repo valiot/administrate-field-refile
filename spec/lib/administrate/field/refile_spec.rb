@@ -8,7 +8,7 @@ describe Administrate::Field::Refile do
 
       path = field.to_partial_path
 
-      expect(path).to eq("/field/refile/#{page}")
+      expect(path).to eq("/fields/refile/#{page}")
     end
   end
 end
