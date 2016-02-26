@@ -1,0 +1,20 @@
+<%#
+# Refile Form Partial
+
+This partial renders an attachment_field element for uloading files.
+
+## Local variables:
+
+- `f`:
+  A Rails form generator, used to help create the appropriate input fields.
+- `field`:
+  An instance of [Administrate::Field::Refile][1].
+
+%>
+
+<div class="field-unit__label">
+  <%= f.label field.attribute %>
+</div>
+<div class="field-unit__field">
+  <%= f.attachment_field field.attribute, direct: field.direct, presigned: field.presigned, multiple: field.multiple %>
+</div>

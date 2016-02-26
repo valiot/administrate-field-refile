@@ -1,0 +1,16 @@
+<%#
+# Refile Index Partial
+
+This partial renders a refile link to the attachment_url
+to be displayed on a resource's index page.
+
+By default, the attribute is rendered as a link tag.
+
+## Local variables:
+
+- `field`:
+  An instance of [Administrate::Field::Refile][1].
+
+%>
+
+<%= link_to field.attribute, attachment_url(field.parent_instance, field.attribute) %>

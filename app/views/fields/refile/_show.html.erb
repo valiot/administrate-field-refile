@@ -1,0 +1,21 @@
+<%#
+# Refile Show Partial
+
+This partial renders refile attachment(s),
+to be displayed on a resource's show page.
+
+By default, the attribute is rendered as a link tag.
+
+## Local variables:
+
+- `field`:
+  An instance of [Administrate::Field::Refile][1].
+%>
+
+<% if @_requested_resource.public_send("#{field.name}").is_a?(Array) %>
+  <% @_requested_resource.public_send("#{field.name.split('_')[0]}").each do |photo| %>
+    <%= link_to photo.file_filename, attachment_url(photo, :file) %>
+  <% end %>
+<% else %>
+  <%= link_to @_requested_resource.public_send("#{field.name}_filename"), attachment_url(@_requested_resource, field.attribute) %>
+<% end %>
