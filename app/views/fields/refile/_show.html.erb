@@ -12,6 +12,7 @@ By default, the attribute is rendered as a link tag.
   An instance of [Administrate::Field::Refile][1].
 %>
 
+<% return nil if field.data.nil? %>
 <% if @_requested_resource.public_send("#{field.name}").is_a?(Array) %>
   <% @_requested_resource.public_send("#{field.name.split('_')[0]}").each do |photo| %>
     <%= link_to photo.file_filename, attachment_url(photo, :file) %>
