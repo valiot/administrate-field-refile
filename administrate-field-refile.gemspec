@@ -1,6 +1,6 @@
 $:.push File.expand_path('../lib', __FILE__)
 
-require 'administrate/field/refile'
+require './lib/administrate/field/refile'
 
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-refile'
