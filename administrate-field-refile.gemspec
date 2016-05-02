@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
   gem.files = `git ls-files`.split("\n")
   gem.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
 
-  gem.add_dependency 'administrate', '~> 0.1.4'
+  gem.add_dependency 'administrate', '>= 0.2.0', '< 0.3.0'
   gem.add_dependency 'rails', '~> 4.2'
   gem.add_dependency 'refile', '~> 0.6'
 
