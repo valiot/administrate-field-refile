@@ -1,6 +1,6 @@
 $:.push File.expand_path('../lib', __FILE__)
 
-require './lib/administrate/field/refile'
+require 'administrate/field/refile'
 
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-refile'
@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
 
   gem.add_dependency 'administrate', '>= 0.2.0', '< 0.3.0'
-  gem.add_dependency 'rails', '~> 4.2'
+  gem.add_dependency 'rails', '>= 4.2', '< 5.1'
   gem.add_dependency 'refile', '~> 0.6'
 
   gem.add_development_dependency 'rspec', '~> 3.4'
