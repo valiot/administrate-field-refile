@@ -4,7 +4,6 @@ require 'rails'
 module Administrate
   module Field
     class Refile < Administrate::Field::Base
-      VERSION = '0.0.5'.freeze
       class Engine < ::Rails::Engine
       end
 

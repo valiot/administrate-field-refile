@@ -1,10 +1,8 @@
 $:.push File.expand_path('../lib', __FILE__)
 
-require 'administrate/field/refile'
-
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-refile'
-  gem.version = Administrate::Field::Refile::VERSION
+  gem.version = '0.0.5'
   gem.authors = ['Adrian Rangel']
   gem.email = ['adrian@disruptiveangels.com']
   gem.homepage = 'https://github.com/disruptiveangels/administrate-field-refile'
