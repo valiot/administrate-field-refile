@@ -1,4 +1,5 @@
 # AdministrateFieldRefile
+[![Gem](https://img.shields.io/gem/v/administrate-field-refile.svg)]()
 
 All you need to integrate Refile with Administrate.
 
@@ -12,7 +13,7 @@ gem 'administrate-field-refile'
 
 And then execute:
 ```
-$ bundle
+$ bundle install
 ```
 
 ## Usage
@@ -34,3 +35,6 @@ ATTRIBUTE_TYPES = {
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/DisruptiveAngels/administrate-field-refile.
+
+## License
+[MIT License](https://github.com/DisruptiveAngels/administrate-field-refile/blob/better_readme/LICENSE)
